@@ -1,0 +1,348 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  --padding-desktop: 7rem 8rem;
+  --padding-mobile: 5rem 2rem;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+}
+body {
+  background-color: var(--White);
+  font-family: "Alata", sans-serif;
+  color: var(--White);
+  font-weight: 400;
+}
+.none {
+  display: none;
+}
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+}
+nav {
+  background-image: url("./images/desktop/image-hero.jpg");
+  width: 100%;
+  padding: var(--padding-desktop);
+  height: auto;
+  background-size: cover;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+  position: fixed;
+  top: 2%;
+  left: 10%;
+  right: 10%;
+  z-index: 9999;
+}
+nav .navbar .navbarHamburger {
+  display: none;
+}
+nav .navbar .navbarClose {
+  display: none;
+}
+nav .navbar .navbarTitleMobile {
+  display: none;
+}
+nav .navbar .navbarMenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+nav .navbar .navbarMenu .navTop {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1%;
+  gap: 7rem;
+}
+nav .navbar .navbarMenu a {
+  text-decoration: none;
+  color: var(--White);
+}
+nav .hero {
+  width: 50%;
+  border: 1px solid var(--White);
+  padding: 1rem 2rem;
+}
+main {
+  padding: var(--padding-desktop);
+  color: var(--Black);
+}
+main .creation {
+  display: flex;
+  position: relative;
+  margin-bottom: 6rem;
+}
+main .creation .theLeader {
+  position: absolute;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  gap: 1rem;
+  width: 50%;
+  height: 80%;
+  top: 35%;
+  left: 55%;
+}
+main .creation .theLeader p {
+  color: var(--Dark-Gray);
+}
+main .ourCreation {
+  position: relative;
+  padding: 1rem 0.1rem;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+main .ourCreation .titleCreation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .ourCreation .titleCreation .see-all {
+  display: inline-block;
+  height: 25px;
+  width: 100px;
+  background-color: var(--White);
+  border: 1px solid var(--Black);
+}
+main .ourCreation .listCreation {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+main .ourCreation .listCreation h2 {
+  font-size: larger;
+  color: var(--White);
+}
+.deep-earth {
+  background-image: url("./images/desktop/image-deep-earth.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 225px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.night-arcade {
+  background-image: url("./images/desktop/image-night-arcade.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 225px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.soccer-team {
+  background-image: url("./images/desktop/image-soccer-team.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 225px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.the-grid {
+  background-image: url("./images/desktop/image-grid.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 225px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.from-up {
+  background-image: url("./images/desktop/image-from-above.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 225px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.pocket-borealis {
+  background-image: url("./images/desktop/image-pocket-borealis.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 225px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.the-curiosity {
+  background-image: url("./images/desktop/image-curiosity.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 225px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.fish-eye {
+  background-image: url("./images/desktop/image-fisheye.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 225px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer {
+  padding: var(--padding-desktop);
+  background-color: var(--Black);
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .navFooter,
+footer .socialMedia {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .navFooter .navFooterMenu,
+footer .socialMedia .icon {
+  display: flex;
+  gap: 1rem;
+}
+footer .navFooter .navFooterMenu a {
+  color: var(--White);
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+  nav {
+    padding: var(--padding-mobile) !important;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  nav .navbar {
+    margin-bottom: 5rem;
+    top: 2% !important;
+    left: 8% !important;
+    right: 8% !important;
+    z-index: 9999;
+  }
+  nav .navbar .navbarHamburger {
+    display: block;
+  }
+  nav .navbar .navbarClose {
+    display: block !important;
+  }
+  nav .navbar .navTop {
+    align-items: center;
+  }
+  nav .navbar .navbarTitleMobile {
+    font-size: 2rem;
+    display: block !important;
+  }
+  .navbar .navbarMenu a {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+  }
+  .navbar .navbarMenu {
+    top: -78%;
+    position: absolute;
+    padding: 10rem 7rem;
+    right: -200%;
+    flex-direction: column;
+    justify-content: start !important;
+    width: 175%;
+    height: 100vh;
+    gap: 1rem;
+    transition: 1s;
+    background-color: var(--Black);
+  }
+  .sidebar {
+    right: -45% !important;
+  }
+  nav .hero {
+    width: 100%;
+    text-align: center;
+  }
+  main {
+    padding: var(--padding-mobile) !important;
+  }
+  main .creation {
+    flex-direction: column;
+    height: 550px;
+    margin-bottom: 0 !important;
+  }
+  main .creation .theLeader {
+    width: 100%;
+    justify-content: start;
+    height: 20%;
+    padding: 1rem 1rem;
+    top: 40%;
+    left: 0;
+    text-align: center;
+  }
+  main .creation .interactive {
+    flex: 1 1 50rem;
+  }
+  main .creation .interactive img {
+    width: 100%;
+  }
+  main .ourCreation {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .deep-earth,
+  .night-arcade,
+  .fish-eye,
+  .from-up,
+  .soccer-team,
+  .pocket-borealis,
+  .the-curiosity,
+  .the-grid {
+    width: 100% !important;
+  }
+  main .ourCreation .titleCreation {
+    justify-content: center;
+  }
+  main .ourCreation .titleCreation .see-all {
+    position: absolute;
+    margin-top: 1rem;
+    width: 80%;
+    top: 100%;
+    left: 10%;
+  }
+  footer {
+    padding: var(--padding-mobile);
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+  footer .navFooter,
+  footer .socialMedia {
+    align-items: center;
+    text-align: center;
+  }
+  footer .navFooter .navFooterMenu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
